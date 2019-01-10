@@ -1,1 +1,1 @@
-# rabbit-mq
+# mq

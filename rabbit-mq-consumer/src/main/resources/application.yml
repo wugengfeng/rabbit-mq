@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: rabbit-mq-consumer
+  rabbitmq:
+    host: 47.106.207.16
+    port: 5672
+    username: rabbitmq
+    password: wgf123
