@@ -29,20 +29,16 @@
 	</dependencies>
 
 	<build>
-		<!-- 文件名 -->
-		<!--<finalName>${project.artifactId}</finalName>-->
-		<resources>
-			<resource>
-				<targetPath>${project.build.directory}/classes</targetPath>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<includes>
-					<include>**/*.xml</include>
-					<include>**/*.properties</include>
-					<include>**/*.yml</include>
-				</includes>
-			</resource>
-		</resources>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
