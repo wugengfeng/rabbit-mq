@@ -58,13 +58,13 @@ public class RabbitMqProviderApplicationTests {
         //实例连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
         //设置地址
-        connectionFactory.setHost("47.106.207.16");
+        connectionFactory.setHost("127.0.0.1");
         //设置端口
         connectionFactory.setPort(5672);
         //设置用户名
-        connectionFactory.setUsername("rabbitmq");
+        connectionFactory.setUsername("xxx");
         //设置密码
-        connectionFactory.setPassword("wgf123");
+        connectionFactory.setPassword("xxx");
         //获取连接（跟jdbc很像）
         Connection connection = connectionFactory.newConnection();
         //创建通道
